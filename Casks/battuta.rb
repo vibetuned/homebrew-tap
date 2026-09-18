@@ -1,6 +1,6 @@
 cask "battuta" do
-  version "0.0.2"
-  sha256 "b437d9648995d79403f74c4c502acfdc26799f16f2553facee97d17f57aad13e"
+  version "1.0.0"
+  sha256 "fb4dc74304901e9284d0cbf8cf5b3673ccd11b6a39ed2de4b0a013f698441271"
 
   url "https://github.com/vibetuned/battuta/releases/download/v#{version}/battuta_#{version}_universal.dmg"
   name "battuta"
@@ -12,13 +12,11 @@ cask "battuta" do
     strategy :github_latest
   end
 
-  depends_on :macos
-
   app "battuta.app"
 
   zap trash: [
+    "~/Library/WebKit/dev.battuta.editor",
     "~/Library/Caches/dev.battuta.editor",
     "~/Library/Saved Application State/dev.battuta.editor.savedState",
-    "~/Library/WebKit/dev.battuta.editor",
   ]
 end
