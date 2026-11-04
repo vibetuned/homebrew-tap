@@ -1,6 +1,6 @@
 cask "midi-stroke" do
-  version "1.0.1"
-  sha256 "13cffb7d74f29536b958560a0e4a84c945bb14b0a84f90b31bf7f4cca866477d"
+  version "1.1.0"
+  sha256 "476bd899879f845b96c6892480701b5e27fcb72ee991d472aeaf319780c465d7"
 
   url "https://github.com/vibetuned/midi-stroke/releases/download/v#{version}/Midi.Stroke_#{version}_universal.dmg"
   name "Midi Stroke"
