@@ -1,6 +1,6 @@
 cask "battuta" do
-  version "1.2.0"
-  sha256 "dba4f47c879213122d3b05da27815c49b51b8ed670897de2b8880c369a7a2014"
+  version "1.3.0"
+  sha256 "38a89b51bfeced64f0b94a96a346836bd1c03b8f04fe2a904ad8248c11d0b139"
 
   url "https://github.com/vibetuned/battuta/releases/download/v#{version}/battuta_#{version}_universal.dmg"
   name "battuta"
