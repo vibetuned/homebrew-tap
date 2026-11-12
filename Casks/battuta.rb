@@ -1,6 +1,6 @@
 cask "battuta" do
-  version "1.0.0"
-  sha256 "fb4dc74304901e9284d0cbf8cf5b3673ccd11b6a39ed2de4b0a013f698441271"
+  version "1.2.0"
+  sha256 "dba4f47c879213122d3b05da27815c49b51b8ed670897de2b8880c369a7a2014"
 
   url "https://github.com/vibetuned/battuta/releases/download/v#{version}/battuta_#{version}_universal.dmg"
   name "battuta"
@@ -15,6 +15,9 @@ cask "battuta" do
   app "battuta.app"
 
   zap trash: [
+    "~/Library/WebKit/com.vibetuned.battuta",
+    "~/Library/Caches/com.vibetuned.battuta",
+    "~/Library/Saved Application State/com.vibetuned.battuta.savedState",
     "~/Library/WebKit/dev.battuta.editor",
     "~/Library/Caches/dev.battuta.editor",
     "~/Library/Saved Application State/dev.battuta.editor.savedState",
